@@ -32,12 +32,11 @@
         <center>
           <img src="images/TIL ES Rectangular transparent.png" width="200" height="76" alt=""/>
           <h6> Desarrollado por Pablo Sáenz de Tejada y Andre de Vries</h6>
-          <h2 class="text-center">Consulta de datos del INE</h2>
-          <h3 class="text-center">Tableau Web Data Connector</h3>
+          <h2 class="text-center">Conector a datos del INE</h2>
+          <h3 class="text-center">Tableau WDC</h3>
           <p class="text-center">Conéctate directamente desde Tableau a los datos del INE a través de su servicio Tempus3.</p>
         </center>
       </section>
-
     <div class="container">
       <div class="twelve columns" style="margin-top: 10%" id="what">
         <h4>¿Qué es un Conector de Datos Web?</h4>
@@ -54,59 +53,36 @@
         <h4>¿Qué consultas están disponibles?</h4>
         <p>El servicio Tempus3 del INE tiene miles de posibles combinaciones de datos que se pueden consultar, por lo que ofrecer todas las posibles combinaciones no es el objetivo de este WDC. La idea del mismo es poder acceder de forma sencilla a algunas de las series estadísticas del INE más frecuentes y/o interesantes.</p>
         
-
         
+        <center>
+          <select id="selectURL" width="500" STYLE="width: 500px">
+            <option
+              value="https://servicios.ine.es/wstempus/js/ES/DATOS_METADATAOPERACION/EPA?g1=115:&g2=18:454&g3=3:283910&g4=141:21387&p=3"
+              >Tasa de paro total por provincia</option
+            >
+            <option
+              value="https://servicios.ine.es/wstempus/js/ES/DATOS_METADATAOPERACION/EPA?g1=115:&g2=141:&g3=3:283910&g4=18:452&g4=18:453&p=3"
+              >Tasa de paro por provincia y sexo</option
+            >
+            <option value="Blo&">Data about whatever 3</option>
+          </select>
+    
+          <br />
+          Selecciona el número de periodos a analizar:
+          <input
+            type="number"
+            value="Number of periods"
+            id="numberofPeriods"
+            width="100" STYLE="width: 100px"
+          />
+          <br />
 
-    </div>
+          <button class="button-primary" id="submitButton">Obtener datos</button>
+        </center>
+        <br>     
       </div>
+      <p class="lead">Visita nuestra web <a href="https://theinformationlab.es">https://theinformationlab.es</a> y ponte en contacto con nosotros si te gustaría que añadiéramos otras consultas del INE.</p>
     </div>
-  </div>
-  <br>
-  <div class="container">
-
-
-
-         <div class="container container-table">
-            <div class="row vertical-center-row">
-              <div class="text-center col-md-4 col-md-offset-4">
-                <select id="selectURL">
-                  <option
-                    value="https://servicios.ine.es/wstempus/js/ES/DATOS_METADATAOPERACION/EPA?g1=115:&g2=18:454&g3=3:283910&g4=141:21387&p=3"
-                    >Data about whatever</option
-                  >
-                  <option
-                    value="https://servicios.ine.es/wstempus/js/ES/DATOS_METADATAOPERACION/EPA?g1=115:&g2=116:&g3=3:283910&g4=141:21387&p=3"
-                    >Data about whatever 2</option
-                  >
-                  <option value="Blo&">Data about whatever 3</option>
-                </select>
-          
-                <br />
-                Selecciona el número de periodos a analizar:
-                <input
-                  type="number"
-                  value="Number of periods"
-                  id="numberofPeriods"
-                />
-                <br />
-
-                <button class="button-primary" id="submitButton">Obtener datos</button>
-
-              </div>
-            </div>
-          </div>
-          <div class="jumbotron">
-            <div class="container">
-                  <div class="row">
-                    <div class="text-center col-md-8 col-12 mx-auto">
-                      <p class="lead">Visita nuestra web <a href="https://theinformationlab.es">https://theinformationlab.es</a> y ponte en contacto con nosotros si te gustaría que añadiéramos otras consultas del INE.</p>
-                    </div>
-                  </div>
-        </div>
-
-
-
-    </html>
   </body>
   </footer>
 
