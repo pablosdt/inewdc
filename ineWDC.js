@@ -57,7 +57,7 @@
           var Anyo = feat[i].Data[j].Anyo;
           var Valor = feat[i].Data[j].Valor;
           var f = feat[i].Data[j].Fecha;
-          var fecha = f.substring(0, 9);
+          var fecha = f.substring(0, 10);
           var Periodo = feat[i].Data[j].T3_Periodo;
           tableData.push({
             ID: "" + i + j,
