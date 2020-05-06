@@ -12,14 +12,6 @@
         dataType: tableau.dataTypeEnum.date,
       },
       {
-        id: "Periodo",
-        dataType: tableau.dataTypeEnum.string,
-      },
-      {
-        id: "Anyo",
-        dataType: tableau.dataTypeEnum.string,
-      },
-      {
         id: "Valor",
         dataType: tableau.dataTypeEnum.float,
       },
@@ -54,15 +46,11 @@
         var cod = feat[i].COD;
         var nombre = feat[i].Nombre;
         for (var j = 0; j < feat[i].Data.length; j++) {
-          var Anyo = feat[i].Data[j].Anyo;
           var Valor = feat[i].Data[j].Valor;
           var f = feat[i].Data[j].Fecha;
           var fecha = f.substring(0, 10);
-          var Periodo = feat[i].Data[j].T3_Periodo;
           tableData.push({
             ID: "" + i + j,
-            Periodo: Periodo,
-            Anyo: Anyo,
             Valor: Valor,
             Codigo_INE: cod,
             Fecha: fecha,
